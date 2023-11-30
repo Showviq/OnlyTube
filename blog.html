@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#111121] min-h-screen bg-[url('https://devconfbd.com/images/star-bg.svg')]"
+  >
+    <div
+      class="max-w-[800px] select-none marker:text-[#4BA2D3] text-white mx-auto pt-32"
+    >
+      <div class="collapse collapse-plus bg-[#161629] mb-4">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          Discuss the scope of var, let, and const!
+        </div>
+        <div class="collapse-content">
+          <p class="text-base font-bold text-[#c51b46]">VAR :</p>
+          <ul class="text-sm list-disc ml-4 my-4">
+            <li>
+              <span class="font-bold text-[#4BA2D3]">Function Scope : </span>
+              Variables declared with var are confined to the function where they are defined, limiting their accessibility.
+            </li>
+            <li>
+              <span class="font-bold text-[#4BA2D3]">Hoisting : </span>
+              var-declared variables are hoisted to the top of their containing function or global scope. This allows pre-declaration use, but they are initialized with undefined until formally declared.
+            </li>
+          </ul>
+          <p class="text-base font-bold text-[#c51b46]">LET :</p>
+          <ul class="text-sm list-disc ml-4 my-4">
+            <li>
+              <span class="font-bold text-[#4BA2D3]">Block Scope : </span>
+              Variables declared with let have block-level scope, ensuring accessibility only within the specific block (e.g., a function, loop, or code enclosed in curly braces {}) where they are defined.
+            </li>
+            <li>
+              <span class="font-bold text-[#4BA2D3]"> Hoisting : </span>
+              Hoisting for let-declared variables brings them to the top of their block, without initialization. Using them before declaration is not allowed.
+            </li>
+          </ul>
+          <p class="text-base font-bold text-[#c51b46]">CONST :</p>
+
+          <ul class="text-sm list-disc ml-4 my-4">
+            <li>
+              <span class="font-bold text-[#4BA2D3]"> Block Scope : </span>
+              Similar to let, const is block-scoped.
+            </li>
+            <li>
+              <span class="font-bold text-[#4BA2D3]"> Immutability : </span>
+              const variables are designed as constants; their values cannot be reassigned after initialization. However, for objects and arrays declared with const, modifications to properties or elements are allowed; only reassigning the variable itself is prohibited.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-[#161629] mb-4">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          Tell us the use cases of null and undefined!
+        </div>
+        <div class="collapse-content">
+          <p class="text-base font-bold text-[#c51b46]">null :</p>
+          <ul class="text-sm list-disc ml-4 my-4">
+            <li>
+              <span class="font-bold text-[#4BA2D3]"
+                >Explicit Absence of Value :</span
+              >
+              null serves as a representation of the deliberate absence of any object value or value in general. It is commonly employed to signify that a variable or property should lack a value or has been intentionally cleared.
+            </li>
+            <li>
+              <span class="font-bold text-[#4BA2D3]">As a Placeholder :</span>
+              Additionally, null can function as a placeholder or initial value that may later receive an assigned value in your code.
+            </li>
+            <li>
+              <span class="font-bold text-[#4BA2D3]"
+                >Returned by Functions :</span
+              >
+              Certain functions or methods might utilize null as a return value to signify that they did not find a meaningful result.
+            </li>
+          </ul>
+          <p class="text-base font-bold text-[#c51b46]">undefined :</p>
+          <ul class="text-sm list-disc ml-4 my-4">
+            <li>
+              <span class="font-bold text-[#4BA2D3]">Default Value :</span>
+              In JavaScript, variables that are declared but not assigned a value are automatically initialized with undefined. Therefore, undefined is commonly employed as the default value for function parameters and variables.
+            </li>
+            <li>
+              <span class="font-bold text-[#4BA2D3]">Property Access :</span>
+              When attempting to access an object property that does not exist, the result will be undefined.
+            </li>
+            <li>
+              <span class="font-bold text-[#4BA2D3]">Array Elements :</span>
+              Accessing an array element beyond the current length of the array will yield undefined.
+            </li>
+            <li>
+              <span class="font-bold text-[#4BA2D3]">Function Return :</span>
+              If a function does not explicitly provide a return value, it automatically returns undefined.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-[#161629] mb-4">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          What do you mean by REST API?
+        </div>
+        <div class="collapse-content">
+          <p class="text-base font-bold text-[#c51b46] mb-4">REST API :</p>
+          <p>
+            A <span class="font-bold text-[#4BA2D3]"> REST API </span> is an
+            interface for software applications that aligns with the principles of the REST architectural style, facilitating communication with RESTful web services. The internet comprises interconnected networks, and within this framework, a web service denotes a collection of open protocols and standards designed to facilitate data exchange between client-server applications. Specifically, web services that adhere to the principles of REST architecture are referred to as RESTful web services.
+          </p>
+        </div>
+      </div>
+      <div class="flex mt-4 justify-center">
+        <a class='bg-[#161629] px-3 rounded-md py-2 text-center' href='/'>
+          Home
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
